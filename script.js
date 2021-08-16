@@ -51,6 +51,17 @@
    ll.push("seventh");
    ll.push("eigth");
    ll.push("nineth");
+   ll.push("tenth");
+   ll.push("eleventh");
+   ll.push("twelveth");
+   ll.push("thirteenth");
+   ll.push("fourteenth");
+   ll.push("fifteenth");
+   ll.push("sixteenth");
+   ll.push("seventeenth");
+   ll.push("eighteenth");
+   ll.push("nineteenth");
+   ll.push("twentynth");
 
    var elems = document.getElementsByClassName("side-navigation__link");
    let elem = ll.getByName(window.location.href.split('#')[1]);

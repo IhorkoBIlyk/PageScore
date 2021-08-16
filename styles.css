@@ -142,7 +142,9 @@ section{
 }
 
 
-
+.smaller-info{
+    width: 40%;
+}
 
 .side-navigation {
     position: fixed;
@@ -154,3 +156,36 @@ section{
     opacity: 1;
     transition: opacity 0.3s;
 }
+
+@media (max-width:481px)  { 
+    html,body{
+        margin: 0;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+    section {
+        height: 100vh;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .info {
+        padding: 0px;
+        width: 100%;
+    }
+    .copy {
+        font-size: 16px;
+    }
+    .copy li{
+        font-size: 16px;
+    }
+    .header{
+        font-size: 40px;
+    }
+    .image {
+        width:100%;
+        object-position: top;
+    }
+    .anchor{
+        top: 0px;
+    }
+ }
