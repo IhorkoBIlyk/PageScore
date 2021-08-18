@@ -36,32 +36,33 @@
        }
      }
    }
+   window.onload = (event) => {
 
    var scrollableElement = document.body;
    scrollableElement.addEventListener('wheel', checkScrollDirection);
+   
    let fadeAwayTime = 3000;
    let ll = new DoublyLinkedList();
-
-   ll.push("first");
-   ll.push("second");
-   ll.push("third");
-   ll.push("fourth");
-   ll.push("fifth");
-   ll.push("sixth");
-   ll.push("seventh");
-   ll.push("eigth");
-   ll.push("nineth");
-   ll.push("tenth");
-   ll.push("eleventh");
-   ll.push("twelveth");
-   ll.push("thirteenth");
-   ll.push("fourteenth");
-   ll.push("fifteenth");
-   ll.push("sixteenth");
-   ll.push("seventeenth");
-   ll.push("eighteenth");
-   ll.push("nineteenth");
-   ll.push("twentynth");
+   ll.push("what-is-seo");
+   ll.push("why-seo");
+   ll.push("factors-impacting");
+   ll.push("on-off-seo");
+   ll.push("ranking-factors");
+   ll.push("top-10-factors");
+   ll.push("what-can-you-do");
+   ll.push("why-page-speed");
+   ll.push("ways-to-improve");
+   ll.push("minify-everything");
+   ll.push("render-blocking-js");
+   ll.push("optimize-images");
+   ll.push("optimize-fonts");
+   ll.push("preconnect-preload");
+   ll.push("cls");
+   ll.push("accessibility");
+   ll.push("background-and-foreground");
+   ll.push("font-sizes");
+   ll.push("labels-titles");
+   ll.push("aria-attributes");
 
    var elems = document.getElementsByClassName("side-navigation__link");
    let elem = ll.getByName(window.location.href.split('#')[1]);
@@ -76,7 +77,6 @@
      location.href = "#";
      location.href = `#${elem.val}`;
    }
-   console.log(ll);
 
    
    for (let index = 0; index < elems.length; index++) {
@@ -141,3 +141,4 @@
       setTimeout(function() { $(elems[index]).children(".side-navigation__title").addClass("fadeAway") }, fadeAwayTime);
     }, false);
   }
+};
